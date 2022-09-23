@@ -3,18 +3,22 @@
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1600 600" style="enable-background:new 0 0 1600 600;" xml:space="preserve">
 <style type="text/css">
-	.st0{clip-path:url(#SVGID_00000129192253644031809490000007274636852101083788_);}
-	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#141717;}
+	.st0{clip-path:url(#SVGID_00000000920333308681382190000008971967131786902690_);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#282A35;}
 </style>
 <g>
-	<defs>
-		<rect id="SVGID_1_" y="201" width="1600" height="600"/>
-	</defs>
-	<clipPath id="SVGID_00000134939865667647294030000011961875749868800912_">
-		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
-	</clipPath>
-	<g style="clip-path:url(#SVGID_00000134939865667647294030000011961875749868800912_);">
-		<path class="st1" d="M1600,278c-311,0-409.9,121.3-811,121C389,399,289,278,0,278v-77h1600C1600,201,1600,249,1600,278z"/>
+	<g>
+		<g>
+			<defs>
+				<rect id="SVGID_1_" y="201" width="1600" height="600"/>
+			</defs>
+			<clipPath id="SVGID_00000163775613181884338640000006122134104971846065_">
+				<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_00000163775613181884338640000006122134104971846065_);">
+				<path class="st1" d="M1600,278c-311,0-409.9,121.3-811,121C389,399,289,278,0,278v-77h1600C1600,201,1600,249,1600,278z"/>
+			</g>
+		</g>
 	</g>
 </g>
 </svg>
