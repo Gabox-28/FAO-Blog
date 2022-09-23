@@ -1,0 +1,130 @@
+<!doctype html>
+<html class="no-js" lang="es" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="utf-8">
+  <title>FAO Blog</title>
+  <meta name="description" content="">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="fao.png">
+
+  <!-- Estlos -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header>
+    <div class="header-box bg_color">
+
+      <section class="header-l">
+        <ul class="header-list">
+          <li class=""> <img id="logo-main" src="img/FAO.png" alt="Logo FAO"> </li>
+          <li class="header-element-l"> <h2>FAO</h2> </li>
+        </ul>
+      </section>
+
+      <section class="header-r">
+        <ul class="header-list">
+          <li class="header-element-r" onmouseover="hoverElement('inicio')" onmouseout="outElement('inicio')">
+            <a href="index.html"> <h2 class="active" id="inicio">Inicio</h2> </a>
+          </li>
+          <li class="header-element-r" onmouseover="hoverElement('JS')" onmouseout="outElement('JS')">
+            <a href="#"><h2 id="JS">JavaScript</h2> </a>
+          </li>
+          <li class="header-element-r" id="header-element-end" onmouseover="hoverElement('JQ')" onmouseout="outElement('JQ')">
+            <a href="#"><h2 id="JQ">JQuery</h2> </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="header-title">
+        <h1> Bienvenido a FAO Blog</h1>
+      </section>
+    </div>
+
+  </header>
+
+  <div class="wave"></div>
+
+  <div class="content">
+
+    <div class="title">
+      <h1>Aprende <span class="title-txt1"> JavaScript </span> y <span class="title-txt2"> jQuery </span></h1>
+
+      <div class="imgs-title">
+        <img class="img-title" src="img/javaScript.png" alt="JavaScript Logo">
+        <img class="img-title" src="img/jQuery.png" alt="jQuery Logo">
+      </div>
+
+    </div>
+
+    <div class="caption-1">
+      <div class="caption-title">
+        <h1>JavaScript</h1>
+        <h4>El lenguaje para programar páginas web</h4>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column">
+        <div class="features">
+          <div class="feature conceptos"><a class="btn" href="#">Conceptos básicos</a></div>
+          <div class="feature funciones"><a class="btn" href="#">Funciones</a></div>
+          <div class="feature referencias"><a class="btn" href="#">Referencias</a></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="code-box">
+          <div class="code-title">
+            <h3>Ejemplo de JavaScript:</h3>
+          </div>
+          <div class="code">
+
+            <br><span class="jscolor" style="color:palevioletred"><span class="" style="color:springgreen">&lt;</span>button<span class="" style="color:mediumpurple"> onclick<span class="" style="color:orange">="myFunction()"</span></span><span class="" style="color:springgreen">&gt;</span></span>
+            <span class="jscolor">Click Me!</span>
+            <span class="jscolor" style="color:palevioletred"><span class="" style="color:springgreen">&lt;</span>/button<span class="" style="color:springgreen">&gt;</span></span><br><br>
+
+            <span class="jscolor" style="color:palevioletred"><span class="" style="color:springgreen">&lt;</span>script<span class="" style="color:springgreen">&gt;</span></span>
+            <span class="jscolor" style="color:orange"><br>
+              <span class="" style="color:mediumpurple">function</span> myFunction() {<br><span class="" style="color:red">
+              </span>     &nbsp; <span class="" style="color:mediumpurple">let</span> x = document.<span class="" style="color:dodgerblue">getElementById</span>(<span class="" style="color:yellowgreen">"demo"</span>);<br><span class="" style="color:red">
+              </span>&nbsp; x.<span class="" style="color:orange">style</span>.<span class="" style="color:orange">fontSize</span> = <span class="" style="color:yellowgreen">"25px"</span>; <br><span class="" style="color:red">
+              </span>&nbsp; x.<span class="" style="color:orange">style</span>.<span class="" style="color:orange">color</span> = <span class="" style="color:yellowgreen">"red"</span>; <br>}<br>
+            </span>
+            <span class="jscolor" style="color:palevioletred"><span class="tagcolor" style="color:springgreen">&lt;</span>/script<span class="tagcolor" style="color:springgreen">&gt;</span></span>
+
+          </div>
+          <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_default">Intentalo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-2"></div>
+
+  <div class="box">
+    <div class="caption-2">
+      <div class="caption-title-2">
+        <h1>jQuery</h1>
+        <h4>Libreria de JS para desarrollar sitios web</h4>
+      </div>
+
+      <div class="features-2">
+        <div class="feature-2 "><a class="btn-2" href="#">Conceptos básicos</a></div>
+        <div class="feature-2 "><a class="btn-2" href="#">Efectos</a></div>
+        <div class="feature-2 "><a class="btn-2" href="#">AJAX</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="wave-3"></div>
+
+  <footer>
+    
+  </footer>
+
+  <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
