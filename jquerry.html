@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="image/png" href="fao.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/jquerry.css">
+    <title>JQuery</title>
+</head>
+<body>
+    <header>
+        <div class="header-box bg_color">
+      
+          <section class="header-l">
+            <ul class="header-list">
+              <li class=""> <img id="logo-main" src="img/FAO.png" alt="Logo FAO"> </li>
+              <li class="header-element-l"> <h2>FAO</h2> </li>
+            </ul>
+          </section>
+      
+          <section class="header-r">
+            <ul class="header-list">
+              <li class="header-element-r" onmouseover="hoverElement('inicio')" onmouseout="outElement('inicio')">
+                <a href="index.html"> <h2 id="inicio">Inicio</h2> </a>
+              </li>
+              <li class="header-element-r" onmouseover="hoverElement('JS')" onmouseout="outElement('JS')">
+                <a href="javaScript.html"><h2 id="JS">JavaScript</h2> </a>
+              </li>
+              <li class="header-element-r" onmouseover="hoverElement('JQ')" onmouseout="outElement('JQ')">
+                <a href="#"><h2 id="JQ" class="active">JQuery</h2> </a>
+              </li>
+              <li class="header-element-r" onmouseover="hoverElement('anexos')" onmouseout="outElement('anexos')">
+                <a href="#"><h2 id="anexos">Anexos</h2> </a>
+              </li>
+              <li class="header-element-r" id="header-element-end" onmouseover="hoverElement('about')" onmouseout="outElement('about')">
+                <a href="about.html"><h2 id="about" >Acerca de</h2> </a>
+            </ul>
+          </section>
+      
+          <section class="header-title">
+            <h1>JQuery</h1>
+          </section>
+        </div>
+      
+    </header>
+    <div class="content">
+        <div class="title">
+            <h1 style="color: #00a0dc">JQuery es una librería de JavaScript que facilita su uso</h2><br>
+            <h3 style="font-weight: inherit;">Para comenzar a utilizar JQuery, primero deberá indicar en el archivo índice de su <br>
+            HTML que estará implementado esta librería. Para lograr esto, diríjase al final del elemento<br>
+            "body" y escriba el siguiente código: </h3>
+        </div>
+
+        <div class="box-code">
+            <span>&ltbody&gt</span><br><br>
+            <span>&nbsp&nbsp&nbsp. . .</span><br><br>
+            <span>&ltscript src= <span style="color: darkseagreen;">"https://code.jquery.com/jquery-3.6.1.min.js"</span><br> 
+            &nbsp&nbsp&nbspintegrity=<span style="color: darkseagreen;">"sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="</span><br>
+            &nbsp&nbsp&nbspcrossorigin=<span style="color: darkseagreen;">"anonymous"</span>&gt&lt/script&gt</span><br><br>
+            <span>&lt/body&gt</span>
+        </div>
+
+        <div class="title">
+            <h2 style="color: #00a0dc">Iniciando JQuery</h2><br>
+                <h3> Una vez implementada la librería de JQuery, procedemos a utilizarla. Para esto, <br>
+                cree un archivo de JavaScript y escriba el siguiente segmento de código. Dentro de este <br>
+                segmento de código se utilizará la librería de JQuery</h3>
+        </div>
+
+        <div class="box-code">
+            <span style="color:white"> $(document).ready(</span> <span style="color:mediumpurple">function<span>
+                <spans tyle="color:white">(){</spans><br>
+                <br>
+                <span style="color:gray"> //Los métodos de JQuery se usan aquí</span><br>
+              <br>
+              <span style="color:white">});</span>
+        </div>
+        
+        <div class="title ">
+            <h2 style="color: #00a0dc; margin-bottom: 1.5em;">Acerca de JQuery</h2>
+            <h3>La biblioteca jQuery posee las siguientes características:</h3> 
+            <ul >
+                <li class="normal-u-list"><h3>Manipulación de HTML/DOM </h3></li>
+                <li class="normal-u-list"><h3>Manipulación de CSS</h3></li>
+                <li class="normal-u-list"><h3>Métodos de eventos HTML</h3></li>
+                <li class="normal-u-list"><h3>Efectos y animaciones</h3></li>
+                <li class="normal-u-list"><h3>AJAX</h3></li>
+                <li class="normal-u-list"><h3>Utilidades</h3></li>
+            </ul>
+        </div>
+
+        <div class="title">
+            <h2 style="color: #00a0dc">Detector de eventos de JQuery</h2><br>
+                <h3> JQuery permite definir acciones si algún elemento dentro del HTML llegase a cumplir<br>
+                    con ciertos eventos. Primero, los elementos dentro de HTML deben de estar declarados con id</h3>
+        </div>
+
+        <div class="box-code">
+            <span>&ltbody&gt</span><br><br>
+            <span>&nbsp&nbsp&nbsp. . .</span><br><br>
+            <span>&ltbutton</span> name=<span style="color: darkseagreen">"boton1"</span>
+            id=<span style="color: darkseagreen">"boton1"</span> type=<span style="color: darkseagreen">"button"</span>&gt
+            <span style="color: gray">Presionar</span> <span>&lt/button&gt</span><br>
+            <span>&lt/body&gt</span>
+        </div>
+
+        <div class="title">
+                <h3> Para establecer un detector de eventos, dentro del "Document ready", declaramos el siguiente<br>
+                    código</h3>
+        </div>
+
+        <div class="box-code">
+            <span style="color:white"> $(document).ready(</span> <span style="color:mediumpurple">function</span>
+                <span style="color:white">(){</spans><br>
+                <br>
+                &nbsp<span>$(</span><span style="color:darkseagreen">"#boton1"</span><span>).click(</span>
+                <span style="color:mediumpurple">function</span> () {<br>
+                    &nbsp&nbsp&nbsp<span style="color:mediumpurple">let</span> x = 10; <br>
+                    &nbsp&nbsp&nbspconsole.<span style="color:cornflowerblue">log</span>(x);<br>
+
+                    &nbsp})
+                <br>
+                <br><span style="color:white">});</span>
+        </div>
+        <div class="title">
+            <h2 style="color: #00a0dc">Efectos visuales en JQuery</h2><br>
+            <h3>Existen varios efectos visuales en JQuery para la animación de los elementos HTML. <br>
+            Uno de estos es el "Fade" o la difuminación, Este permitirá que los elementos aparezcan o desaparezcan<br>
+            con un efecto animado de difuminación</h3>
+        </div>
+
+        <div class="box-code">
+            <span style="color:white"> $(document).ready(</span> <span style="color:mediumpurple">function</span>
+                <span style="color:white">(){</spans><br>
+                <br>
+                <span style="color:gray">// Mostrar con difuminación</span> <br>
+                &nbsp<span>$(</span><span style="color:darkseagreen">"#boton1"</span><span>).click(</span>
+                <span style="color:mediumpurple">function</span> () {<br>
+                    &nbsp&nbsp&nbsp$(<span style="color:darkseagreen">"#div1"</span>).fadeIn();<br>
+
+                    &nbsp})<br><br>
+                
+                    <span style="color:gray">// Ocultar con difuminación</span> <br>
+                &nbsp<span>$(</span><span style="color:darkseagreen">"#boton2"</span><span>).click(</span>
+                <span style="color:mediumpurple">function</span> () {<br>
+                    &nbsp&nbsp&nbsp$(<span style="color:darkseagreen">"#div2"</span>).fadeOut();<br>
+
+                    &nbsp})
+
+                <br>
+                <br><span style="color:white">});</span>
+        </div>
+
+        <div class="title">
+            <h2 style="color: #00a0dc">HTML y JQuery</h2><br>
+            <h3>JQuery no solo puede interactuar con los elementos de HTML, también puede alterar el documento<br>
+            completo con funciones como "remove()" que pueden eliminar elementos HTML</h3>
+        </div>
+
+        <div class="box-code">
+            <span style="color:white"> $(document).ready(</span> <span style="color:mediumpurple">function</span>
+                <span style="color:white">(){</spans><br>
+                <br>
+                &nbsp<span>$(</span><span style="color:darkseagreen">"#boton1"</span><span>).click(</span>
+                <span style="color:mediumpurple">function</span> () {<br>
+                    &nbsp&nbsp&nbsp&nbsp$(<span style="color:darkseagreen">div1"</span>).remove();
+
+                    &nbsp})
+                <br>
+                <br><span style="color:white">});</span>
+        </div>
+
+
+    </div>
+
+
+    <!--FOOTER SECTION-->
+    
+    
+    <footer>
+        <div class="row">
+            <div class="column-th">
+            <div class="copyrigth">
+                <h1>FAO Blog</h1>
+                <h4>© 2022 FAO Blog. Todos los derechos reservados.</h4>
+            </div>
+            </div>
+        
+            <div class="column-th">
+            <div class="footer-team">
+                <h2 style="color: #00a0dc">Contenido extraido de</h3>
+                <img style="width: 120px" src="/img/W3Schools_logo.png" alt="W3 Logo">
+            </div>
+            </div>
+        
+            <div class="column-th">
+            <div class="footer-logo">
+                <img src="img/FAO.png" alt="logo FAO">
+            </div>
+            </div>
+        </div>
+    </footer>
+
+      <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

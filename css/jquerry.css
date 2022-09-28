@@ -1,0 +1,150 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+}
+
+html {
+color: white;
+font-family: "Fira Code", sans-serif;
+font-size: 1em;
+
+overflow-x: hidden;
+}
+
+body{
+background-color:#282a35;
+}
+.header-list{
+position: static;
+z-index: 100;
+}
+
+.header-title{
+padding: 30px;
+color: white;
+text-align: center;
+}
+
+#logo-main{
+margin-top: 10px;
+margin-left: 40px;
+height: 70px;
+width: 70px;
+}
+
+.header-l{
+float: left;
+height: 80px;
+display: inline-block;
+}
+
+.header-r{
+float: right;
+height: 80px;
+display: inline-block;
+}
+
+.header-list{
+display: flex;
+justify-content: center;
+}
+
+.header-element-l{
+list-style: none;
+padding: 30px;
+}
+
+.header-element-r{
+margin: 5px;
+padding: 25px;
+list-style: none;
+}
+
+.header-element-r:hover{
+margin: 5px;
+padding: 25px;
+background-color: #555555;
+border-radius: 20px;
+}
+
+#header-element-end{
+margin-right: 50px;
+}
+
+.header-element-r a{
+color: #9aa0a6;
+text-decoration: none;
+}
+
+.content{
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 15%;
+  
+}
+
+.title{
+    margin-top: 5vh;
+    padding: 30px;
+    color: #9aa0a6;
+}
+
+h3{
+    font-weight: inherit;
+}
+
+.box-code{
+    width: 60%;
+    border-radius: 10px;
+    margin-left: 30px;
+    padding: 10px 10px;
+    border: #9aa0a6 2px solid;
+    font-weight: bold;
+    background-color: #202124;
+}
+
+.normal-u-list{
+    margin-left: 2rem;
+    list-style-type: disc;
+    text-decoration: inherit;
+}
+
+.copyrigth{
+    margin-top: 70px;
+  }
+footer{
+background-color: #202124;
+margin-top: 20vh;
+height: 250px;
+width: 100%;
+display: flex;
+align-content: center;
+justify-content: center;
+bottom: 0;
+position: static;
+}
+.footer-team{
+text-align: center;
+}
+
+.column-th{
+float: left;
+width: 33%;
+padding: 10px;
+display: flex;
+justify-content: center;
+}
+
+.footer-logo{
+width: 200px;
+height: 200px;
+margin-top: 30px;
+}
+
+.row{
+width: 100%;
+}
