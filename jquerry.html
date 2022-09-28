@@ -164,7 +164,27 @@
                 <br>
                 &nbsp<span>$(</span><span style="color:darkseagreen">"#boton1"</span><span>).click(</span>
                 <span style="color:mediumpurple">function</span> () {<br>
-                    &nbsp&nbsp&nbsp&nbsp$(<span style="color:darkseagreen">div1"</span>).remove();
+                    &nbsp&nbsp&nbsp&nbsp$(<span style="color:darkseagreen">"#div1"</span>).remove();
+
+                    &nbsp})
+                <br>
+                <br><span style="color:white">});</span>
+        </div>
+
+        <div class="title">
+            <h2 style="color: #00a0dc">AJAX en JQuery</h2><br>
+            <h3>AJAX permite hacer alteraciones en el sitio actual sin tener que refrescar la página, por medio <br>
+            de acceso a un servidor. Por ejemplo, si se desea cambiar un div usando los archivos almacenados en x<br>
+            sitio se usa el método "load()"</h3>
+        </div>
+
+        <div class="box-code">
+            <span style="color:white"> $(document).ready(</span> <span style="color:mediumpurple">function</span>
+                <span style="color:white">(){</spans><br>
+                <br>
+                &nbsp<span>$(</span><span style="color:darkseagreen">"#boton1"</span><span>).click(</span>
+                <span style="color:mediumpurple">function</span> () {<br>
+                    &nbsp&nbsp&nbsp&nbsp$(<span style="color:darkseagreen">"#div1"</span>).load(<span style="color:darkseagreen">"file.txt"</span>);<br>
 
                     &nbsp})
                 <br>
