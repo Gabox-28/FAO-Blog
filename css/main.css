@@ -102,61 +102,114 @@ header{
 
 .bg_color{
   width: 100%;
-
   background: #282a35;
   position: absolute;
   top: 0;
   z-index: 100;
 }
 
-.wave{
-  width: 300%;
-  height: 100%;
-  position: absolute;
-  top: 20px;
-  left: 0;
-  margin-left: 0;
-  background-image: url(../img/wave.svg);
-  background-position: bottom;
-  z-index: 0;
-
-  animation: wave 9s linear infinite;
-}
-
-.wave-2{
-  width: 300%;
-  height: 100%;
-  position: absolute;
-  top: 810px;
-  left: 0;
-  background-image: url(../img/wave-2.svg);
-  background-position: bottom;
-  z-index: 0;
-
-  animation: wave 7s linear infinite;
-}
-
-.wave-3{
-  width: 300%;
-  height: 100%;
-  position: absolute;
-  top: 1700px;
-  left: 0;
-  background-image: url(../img/wave-3.svg);
-  background-position: bottom;
-  z-index: 0;
-
-  animation: wave 7s linear infinite;
-}
-
-@keyframes wave {
-  0%{
+@media  screen and (max-width: 1920px) {
+  .wave{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    margin-top: 1.8vh;
+    left: 0;
     margin-left: 0;
+    background-image: url(../img/wave.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 9s linear infinite;
   }
-  100%{
-    margin-left: -2500px;
+
+  .wave-2{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 85vh;
+    left: 0;
+    background-image: url(../img/wave-2.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 7s linear infinite;
+  }
+
+  .wave-3{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 180vh;
+    left: 0;
+    background-image: url(../img/wave-3.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 7s linear infinite;
+  }
+
+  @keyframes wave {
+    0%{
+      margin-left: 0;
+    }
+    100%{
+      margin-left: -2500px;
+    }
   }
 }
+
+@media  screen and (max-width: 1366px) {
+  .wave{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    margin-top: 18vh;
+    left: 0;
+    margin-left: 0;
+    background-image: url(../img/wave.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 9s linear infinite;
+  }
+
+  .wave-2{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 113.2vh;
+    left: 0;
+    background-image: url(../img/wave-2.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 7s linear infinite;
+  }
+
+  .wave-3{
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    top: 240vh;
+    left: 0;
+    background-image: url(../img/wave-3.svg);
+    background-position: bottom;
+    z-index: 0;
+
+    animation: wave 7s linear infinite;
+  }
+
+  @keyframes wave {
+    0%{
+      margin-left: 0;
+    }
+    100%{
+      margin-left: -2000px;
+    }
+  }
+}
+
 
 
 

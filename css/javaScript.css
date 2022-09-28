@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  color: white;
+  font-family: "Fira Code", sans-serif;
+  font-size: 1em;
+
+  overflow-x: hidden;
+}
+
+body{
+  *background-color: #eae098;
+  background-color:#282a35;
+}
+
+
+/* Estilos del header */
+
+
+header{
+  z-index: 100;
+  display: initial;
+}
+
+.header-list{
+  position: static;
+  z-index: 100;
+}
+
+.header-title{
+  padding: 30px;
+  color: white;
+  text-align: center;
+}
+
+#logo-main{
+  margin-top: 10px;
+  margin-left: 40px;
+  height: 70px;
+  width: 70px;
+}
+
+.header-l{
+  float: left;
+  height: 80px;
+  display: inline-block;
+}
+
+.header-r{
+  float: right;
+  height: 80px;
+  display: inline-block;
+}
+
+.header-list{
+  display: flex;
+  justify-content: center;
+}
+
+.header-element-l{
+  list-style: none;
+  padding: 30px;
+}
+
+.header-element-r{
+  margin: 5px;
+  padding: 25px;
+  list-style: none;
+}
+
+.header-element-r:hover{
+  margin: 5px;
+  padding: 25px;
+  background-color: #555555;
+  border-radius: 20px;
+}
+
+#header-element-end{
+  margin-right: 50px;
+}
+
+.header-element-r a{
+  color: #9aa0a6;
+  text-decoration: none;
+}
+
+.active{
+  color: #00a0dc;
+}
+
+/* Estilos del contenido principal */
+
+.content{
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 15%;
+
+}
+
+.column{
+  width: 50%;
+  float: left;
+}
+
+.title{
+  margin-top: 5vh;
+  padding: 30px;
+  color: #9aa0a6;
+}
+
+.caption{
+  padding: 30px;
+  color: #9aa0a6;
+}
+
+.btn{
+  margin-top: 2vh;
+  margin-left: 1vh;
+}
+
+.box-code{
+  width: 60%;
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 10px 10px;
+  border: #9aa0a6 2px solid;
+  font-weight: bold;
+  background-color: #202124;
+}
+
+.button-try{
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+  color: white;
+  padding: 10px 50px;
+  background-color: #00a0dc;
+  border-radius: 55px;
+}
+
+footer{
+  background-color: #202124;
+  margin-top: 20vh;
+  height: 250px;
+  width: 100%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  bottom: 0;
+  position: static;
+}
+
+.footer-logo{
+  width: 200px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+.copyrigth{
+  margin-top: 70px;
+}
+
+.footer-team{
+  text-align: center;
+}
+
+.footer-team h3{
+  margin-top: 30px;
+  color: #00a0dc;
+  margin-bottom: 10px;
+  font-size: 26px;
+}
+
+.column-th{
+  float: left;
+  width: 33%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.row{
+  width: 100%;
+}

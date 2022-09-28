@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/png" href="fao.png">
+
+  <!-- Estlos -->
+  <link rel="stylesheet" href="css/javaScript.css">
+</head>
+<body>
+
+<header>
+  <div class="header-box bg_color">
+
+    <section class="header-l">
+      <ul class="header-list">
+        <li class=""> <img id="logo-main" src="img/FAO.png" alt="Logo FAO"> </li>
+        <li class="header-element-l"> <h2>FAO</h2> </li>
+      </ul>
+    </section>
+
+    <section class="header-r">
+      <ul class="header-list">
+        <li class="header-element-r" onmouseover="hoverElement('inicio')" onmouseout="outElement('inicio')">
+          <a href="index.html"> <h2 id="inicio">Inicio</h2> </a>
+        </li>
+        <li class="header-element-r" onmouseover="hoverElement('JS')" onmouseout="outElement('JS')">
+          <a href="javaScript.html"><h2 class="active" id="JS">JavaScript</h2> </a>
+        </li>
+        <li class="header-element-r" onmouseover="hoverElement('JQ')" onmouseout="outElement('JQ')">
+          <a href="#"><h2 id="JQ">JQuery</h2> </a>
+        </li>
+        <li class="header-element-r" onmouseover="hoverElement('anexos')" onmouseout="outElement('anexos')">
+          <a href="#"><h2 id="anexos">Anexos</h2> </a>
+        </li>
+        <li class="header-element-r" id="header-element-end" onmouseover="hoverElement('about')" onmouseout="outElement('about')">
+          <a href="about.html"><h2 id="about" >Acerca de</h2> </a>
+      </ul>
+    </section>
+
+    <section class="header-title">
+      <h1>Sintaxis JavaScript</h1>
+    </section>
+  </div>
+
+</header>
+
+
+<div class="content">
+  <div class="title">
+    <h2>La sintaxis de JavaScript es el conjunto de reglas, cómo se construyen los programas de JavaScript:</h2>
+  </div>
+
+  <div class="box-code">
+    <span style="color:gray">//Como declarar variable <br> <span style="color:mediumpurple" >var</span> <span style="color:white">x;</span> <br>
+      <span style="color:mediumpurple">let</span> <span style="color:white">y;</span> <br> <br> <span>//Como usar las variables</span>  <br>
+    <span style="color:white">x = </span> <span style="color:lightskyblue">5</span> <span style="color:white">;</span> <br> <span style="color:white">y = </span>
+      <span style="color:lightskyblue" >7</span> <span style="color:white">;</span> <br> <span style="color:mediumpurple">let</span>
+      <span style="color:white"> z = x + y;</span> </span>
+  </div>
+
+  <div class="title ">
+    <h2 style="color: #00a0dc">Valores JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">La sintaxis de JavaScript define dos tipos de valores:</h3>
+    <h4 style="margin: 10px 10px; font-weight: bolder">Valores fijos</h4>
+    <h4 style="margin: 6px 10px; font-weight: bolder">Valores variables</h4>
+
+    <h3 style="margin-top: 20px; font-weight: normal">Los valores fijos se denominan literales.</h3>
+    <h3 style="margin-top: 6px; font-weight: normal">Los valores de las variables se denominan Variables.</h3>
+
+    <h2 style="margin-top: 60px; font-weight: bold; color: #00a0dc">Literales de JavaScript</h2>
+    <h3 style="margin-top: 6px; font-weight: normal">Las dos reglas de sintaxis más importantes para valores fijos son:</h3>
+    <h3 style="margin-top: 20px">1. Los números se escriben con o sin decimales:</h3>
+    <h3 style="margin-top: 20px">2. Las cadenas son texto, escrito entre comillas simples o dobles:</h3>
+
+  </div>
+
+  <div class="box-code">
+    <span style="color:gray"> <span style="color:lightskyblue">123.456</span> <br> <span style="color:lightskyblue">123</span> <br> <br>
+      <span style="color: darkseagreen">"FAO Blog"</span> <br> <span style="color: darkseagreen">'FAO Blog'</span>
+    </span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_numbers">Inténtalo</a>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Variables JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">En un lenguaje de programación, las variables se utilizan para almacenar valores de datos.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">JavaScript usa las palabras clave yvar para letdeclarar constvariables.</h3>
+    <h3 style="margin-top: 20px">Se utiliza un signo igual para asignar valores a las variables.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">En este ejemplo, x se define como una variable. Entonces, a x se le asigna (dado) el valor 6:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: mediumpurple">let <span style="color: white">x;</span> <br> <span style="color: white">x = </span>
+      <span style="color: lightskyblue">6</span> <span style="color: white">;</span></span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_variables">Inténtalo</a>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Operadores JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">JavaScript usa operadores aritméticos ( + - * /) para calcular valores:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: white">(<span style="color: lightskyblue"> 5</span> <span style="color: white"> + </span> <span style="color: lightskyblue;">6</span>
+      <span style="color: white">)</span><span style="color: white"> * </span> <span style="color: lightskyblue">10</span> </span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_operators">Inténtalo</a>
+  </div>
+
+  <div class="caption">
+    <h3 style="margin-top: 20px; font-weight: normal; ">JavaScript usa un operador de asignación ( = ) para asignar valores a las variables:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color:mediumpurple">let</span> <span style="color:white">x, y;</span> <br> <br>
+    <span style="color:white">x = </span> <span style="color:lightskyblue">5</span> <span style="color:white">;</span> <br> <span style="color:white">y = </span>
+    <span style="color:lightskyblue">7</span> <span style="color:white">;</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_assign">Inténtalo</a>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Expresiones JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Una expresión es una combinación de valores, variables y operadores, que calcula un valor.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">El cálculo se llama evaluación.</h3>
+    <h3 style="margin-top: 20px">Por ejemplo, 5 * 10 se evalúa como 50:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: lightskyblue">5 <span style="color: white">*</span> 10</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions">Inténtalo</a>
+  </div>
+
+  <div class="caption">
+    <h3 style="margin-top: 20px; font-weight: normal; ">Las expresiones también pueden contener valores de variables:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: lightskyblue"><span style="color: white">x *</span> 10</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_variables">Inténtalo</a>
+  </div>
+
+  <div class="caption">
+    <h3 style="margin-top: 20px; font-weight: normal; ">Los valores pueden ser de varios tipos, como números y cadenas.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Por ejemplo, "John" + " " + "Doe", se evalúa como "John Doe":</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: darkseagreen">"John" <span style="color: white">+</span> " " <span style="color: white">+</span> "Doe"</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_expressions_strings">Inténtalo</a>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Palabras clave de JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Las palabras clave de JavaScript se utilizan para identificar las acciones a realizar.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">La palabra clave <span style="color: lightcoral; background-color: #202124; padding: 2px 10px">let</span> le dice al
+      navegador que cree variables:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: mediumpurple">let</span> <span style="color: white">x, y;</span> <br> <br>
+    <span style="color: white">x = </span> <span style="color: lightskyblue">5</span> <span style="color: white">+</span> <span style="color: lightskyblue">8</span>
+    <span style="color: white">;</span> <br> <span style="color: white">y = x *</span> <span style="color: lightskyblue">10</span> <span style="color: white">;</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_let">Inténtalo</a>
+  </div>
+
+  <div class="caption">
+    <h3 style="margin-top: 20px; font-weight: normal; ">La palabra clave <span style="color: lightcoral; background-color: #202124; padding: 2px 10px">var</span> también
+      le dice al navegador que cree variables:</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: mediumpurple">var</span> <span style="color: white">x, y;</span> <br> <br>
+    <span style="color: white">x = </span> <span style="color: lightskyblue">5</span> <span style="color: white">+</span> <span style="color: lightskyblue">8</span>
+    <span style="color: white">;</span> <br> <span style="color: white">y = x *</span> <span style="color: lightskyblue">10</span> <span style="color: white">;</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_keywords">Inténtalo</a>
+  </div>
+
+  <div class="caption">
+    <h3 style="margin-top: 20px; font-weight: bolder; ">En estos ejemplos, usar var o let producirá el mismo resultado.</h3>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Comentarios JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">No todas las declaraciones de JavaScript se "ejecutan".</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">El código después de barras oblicuas dobles <span style="color: lightcoral; background-color: #202124; padding: 2px 10px"> // </span>
+      lo entre <span style="color: lightcoral; background-color: #202124; padding: 2px 10px"> /* </span> y <span style="color: lightcoral; background-color: #202124; padding: 2px 10px"> */ </span>
+      se trata como un comentario</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Los comentarios no se ejecutan, y no afectan el resultado del código.</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: #9aa0a6">// Esto es un comentario</span> <br>
+    <span style="color: white">x = </span> <span style="color: lightskyblue">5</span> <span style="color: white">+</span> <span style="color: lightskyblue">8</span>
+    <span style="color: white">;</span> <br> <span style="color: white">y = x *</span> <span style="color: lightskyblue">10</span> <span style="color: white">;</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_comments">Inténtalo</a>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">Identificadores/Nombres de JavaScript</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Los identificadores son nombres JavaScript.</h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Los identificadores se utilizan para nombrar variables y palabras clave y funciones. </h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Las reglas para los nombres legales son las mismas en la mayoría de los lenguajes de programación.</h3>
+    <h3 style="margin-top: 20px; font-weight: bold; ">Los nombres deben comenzar con una letra (AZ o az), un guión bajo (_) o un signo de dólar ($).</h3>
+    <h3 style="margin-top: 20px; font-weight: bold; ">Los caracteres subsiguientes pueden ser letras, dígitos, guiones bajos o signos de dólar.</h3>
+  </div>
+
+  <div class="title">
+    <h2 style="color: #00a0dc">JavaScript distingue entre mayúsculas y minúsculas</h2>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Todos los identificadores de JavaScript distinguen entre mayúsculas y minúsculas . </h3>
+    <h3 style="margin-top: 20px; font-weight: normal; ">Esto significa que <span style="color: lightcoral; background-color: #202124; padding: 2px 10px">lastName</span> y
+      <span style="color: lightcoral; background-color: #202124; padding: 2px 10px">lastname</span> son dos identificadores diferentes.</h3>
+  </div>
+
+  <div class="box-code">
+    <span style="color: mediumpurple">let</span> <span style="color: white">lastName</span> <span style="color: white">=</span> <span style="color: lightskyblue">"Doe"</span>
+    <span style="color: white">;</span> <br> <span style="color: mediumpurple">let</span> <span style="color: white">lastname</span> <span style="color: white">=</span>
+    <span style="color: lightskyblue">"Peterson"</span> <span style="color: white">;</span>
+  </div>
+
+  <div class="btn">
+    <a class="button-try" href="https://www.w3schools.com/js/tryit.asp?filename=tryjs_syntax_case">Inténtalo</a>
+  </div>
+
+</div>
+
+<footer>
+  <div class="row">
+    <div class="column-th">
+      <div class="copyrigth">
+        <h1>FAO Blog</h1>
+        <h4>© 2022 FAO Blog. Todos los derechos reservados.</h4>
+      </div>
+    </div>
+
+    <div class="column-th">
+      <div class="footer-team">
+        <h3>Contenido extraido de</h3>
+        <img style="width: 120px" src="/img/W3Schools_logo.png" alt="W3 Logo">
+      </div>
+    </div>
+
+    <div class="column-th">
+      <div class="footer-logo">
+        <img src="img/FAO.png" alt="logo FAO">
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
